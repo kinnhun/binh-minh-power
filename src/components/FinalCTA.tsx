@@ -76,7 +76,7 @@ export default function FinalCTA() {
           <button
             type="button"
             onClick={openAuditModal}
-            className="w-full sm:w-auto px-8 py-4 rounded-full bg-solar-gold hover:bg-solar-gold-hover active:bg-solar-gold-active text-deep-brown font-extrabold text-sm sm:text-base shadow-lg hover:shadow-solar-gold/20 transition-all cursor-pointer focus:outline-none"
+            className="w-full sm:w-auto px-8 py-4 rounded-full bg-solar-gold hover:bg-solar-gold-hover active:bg-solar-gold-active text-deep-brown font-extrabold text-sm sm:text-base shadow-lg hover:shadow-solar-gold/20 transition-all cursor-pointer focus:outline-none animate-pulse-glow"
           >
             Bắt đầu audit I-REC miễn phí ngay
           </button>

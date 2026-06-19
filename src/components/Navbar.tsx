@@ -29,7 +29,7 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
       className={cn(
         "fixed left-0 right-0 z-45 transition-all duration-300 px-4 sm:px-6",
-        isScrolled ? "top-3 py-0" : "top-12 py-0"
+        isScrolled ? "top-3 py-0" : "top-16 sm:top-12 py-0"
       )}
     >
       {/* Floating Capsule Bar */}
@@ -54,7 +54,7 @@ export default function Navbar() {
           
           <div className="flex flex-col text-left leading-none">
             <span className={cn(
-              "font-sans font-black tracking-tight text-xs sm:text-sm transition-colors duration-300",
+              "font-sans font-black tracking-tight text-xs sm:text-sm transition-colors duration-300 whitespace-nowrap",
               isScrolled 
                 ? "text-navy-accent group-hover:text-solar-gold" 
                 : "text-white group-hover:text-solar-gold"
@@ -62,7 +62,7 @@ export default function Navbar() {
               Bình Minh Power
             </span>
             <span className={cn(
-              "font-sans text-[8.5px] mt-0.5 flex items-center gap-0.5 leading-none font-semibold shrink-0 transition-colors duration-300",
+              "font-sans text-[8.5px] mt-0.5 flex items-center gap-0.5 leading-none font-semibold shrink-0 transition-colors duration-300 whitespace-nowrap",
               isScrolled ? "text-earth-brown" : "text-stone-300"
             )}>
               <Award className="w-2.5 h-2.5 text-solar-gold shrink-0" />
@@ -107,7 +107,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
             className={cn(
-              "flex items-center gap-2 font-sans px-3 py-1.5 rounded-full border transition-all focus:outline-none",
+              "hidden sm:flex items-center gap-2 font-sans px-3 py-1.5 rounded-full border transition-all focus:outline-none",
               isScrolled 
                 ? "bg-[#FFFDF2] border-solar-gold/30 hover:border-solar-gold" 
                 : "bg-white/[0.03] border-white/10 hover:border-solar-gold/40"
@@ -154,7 +154,7 @@ export default function Navbar() {
             }}
             whileTap={{ scale: 0.97 }}
             className={cn(
-              "relative overflow-hidden group px-4 py-2 rounded-full text-[11px] sm:text-xs font-black shadow-xs cursor-pointer focus:outline-none transition-all duration-300",
+              "relative overflow-hidden group px-4 py-2 rounded-full text-[11px] sm:text-xs font-black shadow-xs cursor-pointer focus:outline-none transition-all duration-300 animate-pulse-glow",
               isScrolled 
                 ? "bg-navy-accent hover:bg-earth-brown text-white" 
                 : "bg-solar-gold hover:bg-solar-gold-hover text-deep-brown"
@@ -166,7 +166,10 @@ export default function Navbar() {
               transition={{ duration: 0.85, ease: "easeInOut" }}
               className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 pointer-events-none"
             />
-            <span className="relative z-10">Audit Miễn Phí</span>
+            <span className="relative z-10">
+              <span className="hidden sm:inline">Audit Miễn Phí</span>
+              <span className="sm:hidden">Audit</span>
+            </span>
           </motion.button>
         </div>
 

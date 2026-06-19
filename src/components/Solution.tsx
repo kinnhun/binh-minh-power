@@ -229,7 +229,7 @@ export default function Solution() {
             onClick={openAuditModal}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.98 }}
-            className="group relative overflow-hidden px-8 py-5 rounded-full bg-solar-gold hover:bg-solar-gold-hover active:bg-solar-gold-active text-deep-brown font-black text-sm sm:text-base flex items-center justify-center gap-3 transition-all shadow-lg mx-auto cursor-pointer focus:outline-none"
+            className="group relative overflow-hidden px-8 py-5 rounded-full bg-solar-gold hover:bg-solar-gold-hover active:bg-solar-gold-active text-deep-brown font-black text-sm sm:text-base flex items-center justify-center gap-3 transition-all shadow-lg mx-auto cursor-pointer focus:outline-none animate-pulse-glow"
           >
             {/* Continuous shimmer reflection sweep cycle */}
             <motion.div

@@ -34,6 +34,19 @@
   --color-navy-accent: var(--navy-accent);
   
   --font-sans: 'Helvetica Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  --animate-pulse-glow: pulse-glow 2s infinite ease-in-out;
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 4px 12px 0 rgba(248, 185, 20, 0.25);
+    }
+    50% {
+      transform: scale(1.025);
+      box-shadow: 0 4px 22px 6px rgba(248, 185, 20, 0.65);
+    }
+  }
 }
 
 body {
