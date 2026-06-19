@@ -16,6 +16,30 @@ export const metadata: Metadata = {
     "audit I-REC miễn phí"
   ],
   authors: [{ name: "Bình Minh Power" }],
+  openGraph: {
+    title: "Dịch vụ I-REC cho nhà máy xuất khẩu EU | CBAM 2026 — Bình Minh Power",
+    description: "BMC hỗ trợ audit I-REC, hồ sơ điện sạch, Scope 2 và CBAM cho nhà máy xuất khẩu EU. Kiểm tra miễn phí, phản hồi trong 2 giờ.",
+    url: "https://binhminhpower.com",
+    siteName: "Bình Minh Power",
+    locale: "vi_VN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dịch vụ I-REC cho nhà máy xuất khẩu EU | CBAM 2026 — Bình Minh Power",
+    description: "BMC hỗ trợ audit I-REC, hồ sơ điện sạch, Scope 2 và CBAM cho nhà máy xuất khẩu EU. Kiểm tra miễn phí, phản hồi trong 2 giờ.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export const viewport = {
