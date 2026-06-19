@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Helvetica Regular';
+  src: local('Helvetica'), local('Helvetica Neue'), local('Arial'), sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #f7f7f5;
+  --foreground: #1c1917;
+  
+  --solar-gold: #F8B914;
+  --solar-gold-hover: #fbc643;
+  --solar-gold-active: #e0a309;
+  --earth-brown: #644519;
+  --deep-brown: #3D2900;
+  --cream-base: #FFF8E1;
+  
+  --slate-text: #1e293b;
+  --navy-accent: #0b1329;
+}
+
+@theme {
+  --color-solar-gold: var(--solar-gold);
+  --color-solar-gold-hover: var(--solar-gold-hover);
+  --color-solar-gold-active: var(--solar-gold-active);
+  --color-earth-brown: var(--earth-brown);
+  --color-deep-brown: var(--deep-brown);
+  --color-cream-base: var(--cream-base);
+  --color-slate-text: var(--slate-text);
+  --color-navy-accent: var(--navy-accent);
+  
+  --font-sans: 'Helvetica Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Classes */
+.glass-card {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(248, 185, 20, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(100, 69, 25, 0.05);
+}
+
+.glass-card-dark {
+  background: rgba(61, 41, 0, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(100, 69, 25, 0.25);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(28, 25, 23, 0.08);
+}
+
+/* Custom Scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f7f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d6d2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b5b5b0;
+}
