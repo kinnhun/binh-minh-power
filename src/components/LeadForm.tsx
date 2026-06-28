@@ -75,6 +75,19 @@ export default function LeadForm() {
     setIsSubmitting(true);
     
     const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeIgZB1iiqapVfSQxSMngUw7AUG_sMk10UdPTfxrXpIJ_WuiA/formResponse";
+    // Map values to match exact Google Form option values
+    let exportValue = formData.exportStatus;
+    if (exportValue === "Đang lên kế hoạch") {
+      exportValue = "Dang lên kế hoạch";
+    }
+
+    let irecValue = formData.irecStatus;
+    if (irecValue === "Chưa có — cần tìm hiểu") {
+      irecValue = "Chưa có -  cần tìm hiểu";
+    } else if (irecValue === "Không biết") {
+      irecValue = "Không";
+    }
+
     const formBody = new URLSearchParams();
     formBody.append("entry.779739088", formData.fullName);
     formBody.append("entry.437998689", formData.jobTitle);
@@ -82,8 +95,8 @@ export default function LeadForm() {
     formBody.append("entry.414236451", formData.phone);
     formBody.append("entry.2102439591", formData.email);
     formBody.append("entry.1639276231", formData.location);
-    formBody.append("entry.717237858", formData.exportStatus);
-    formBody.append("entry.179895397", formData.irecStatus);
+    formBody.append("entry.717237858", exportValue);
+    formBody.append("entry.179895397", irecValue);
 
     try {
       await fetch(GOOGLE_FORM_ACTION_URL, {
