@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 export default function BottomLeftCard() {
   const benefits = [
     "Kết quả trong 2–4 tuần",
-    "Đại lý cấp 1 Singapore",
+    "Đơn vị cung cấp tín chỉ I-REC",
     "50+ nhà máy đã có I-REC",
     "Phản hồi trong 2 giờ",
     "Hồ sơ phục vụ buyer EU / ESG / Scope 2 / CBAM"

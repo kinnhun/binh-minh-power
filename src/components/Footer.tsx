@@ -22,8 +22,12 @@ export default function Footer() {
           {/* Logo & Slogan Column */}
           <div className="md:col-span-5 space-y-4 text-left">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-deep-brown flex items-center justify-center text-solar-gold font-bold text-lg border border-earth-brown/20">
-                BMC
+              <div className="h-10 flex items-center justify-center shrink-0">
+                <img
+                  src="/Logo/PNG/White Logo.png"
+                  alt="BMC Logo"
+                  className="h-full w-auto object-contain"
+                />
               </div>
               <span className="font-sans font-bold text-white text-lg tracking-tight">
                 Bình Minh Power
@@ -45,24 +49,27 @@ export default function Footer() {
             
             <div className="space-y-3 text-xs sm:text-sm">
               <a 
-                href="tel:0901234788" 
+                href="tel:0913943788" 
                 className="flex items-center gap-2.5 hover:text-solar-gold transition-colors focus:outline-none"
               >
                 <Phone className="w-4 h-4 text-solar-gold" />
-                <span>Hotline: 0901 234 788</span>
+                <span>Hotline: 0913 943 788</span>
               </a>
 
               <a 
-                href="mailto:info@binhminhpower.vn" 
+                href="mailto:sales@binhminhpower.com" 
                 className="flex items-center gap-2.5 hover:text-solar-gold transition-colors focus:outline-none"
               >
                 <Mail className="w-4 h-4 text-solar-gold" />
-                <span>Email: info@binhminhpower.vn</span>
+                <span>Email: sales@binhminhpower.com</span>
               </a>
 
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-solar-gold shrink-0 mt-0.5" />
-                <span>Văn phòng đại diện tại TP. Hồ Chí Minh & Bình Dương</span>
+                <div className="space-y-2 text-stone-350">
+                  <span className="block"><strong className="text-white">Trụ sở chính:</strong> Tòa Rox Center, 126 Hồ Tùng Mậu, Phú Diễn, Hà Nội</span>
+                  <span className="block"><strong className="text-white">VP Miền Nam:</strong> Tầng 2, Tòa ST.Moritz, 1014 Đ. Phạm Văn Đồng, Hiệp Bình, Hồ Chí Minh</span>
+                </div>
               </div>
             </div>
           </div>
@@ -90,7 +97,7 @@ export default function Footer() {
         {/* Legal and Copyright */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
           <p className="font-medium">
-            © 2026 Bình Minh Power — Đại lý I-REC cấp 1 tại Việt Nam. All Rights Reserved.
+            © 2026 Bình Minh Power — Đơn vị cung cấp tín chỉ I-REC tại Việt Nam. All Rights Reserved.
           </p>
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1 hover:text-white transition-colors cursor-pointer select-none">

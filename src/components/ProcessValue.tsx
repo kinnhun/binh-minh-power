@@ -108,7 +108,7 @@ export default function ProcessValue() {
                     Đồng hành cùng BMC
                   </h3>
                   <span className="text-[10px] text-earth-brown mt-1 block">
-                    Đại lý cấp 1 Singapore — Chuyên nghiệp & Tốc độ
+                    Trọn gói từ audit đến chứng chỉ — Chuyên nghiệp & Tốc độ
                   </span>
                 </div>
               </div>

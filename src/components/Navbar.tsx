@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Phone, Award } from "lucide-react";
+import { Phone } from "lucide-react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
@@ -34,7 +34,7 @@ export default function Navbar() {
     >
       {/* Floating Capsule Bar */}
       <div className={cn(
-        "max-w-5xl mx-auto flex items-center justify-between rounded-full border transition-all duration-350 px-4 sm:px-5",
+        "max-w-7xl mx-auto flex items-center justify-between rounded-full border transition-all duration-350 px-4 sm:px-5",
         isScrolled 
           ? "bg-white/75 backdrop-blur-md border-stone-200/40 shadow-[0_8px_32px_rgba(0,0,0,0.06)] py-2" 
           : "bg-white/[0.04] backdrop-blur-xl border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.2)] py-3"
@@ -42,17 +42,15 @@ export default function Navbar() {
         
         {/* Compact Brand Logo & Tagline */}
         <div className="flex items-center gap-2 group cursor-pointer">
-          <div className={cn(
-            "w-8 h-8 rounded-full flex items-center justify-center font-black text-xs relative overflow-hidden transition-all duration-300 group-hover:scale-105 shrink-0",
-            isScrolled 
-              ? "bg-deep-brown text-solar-gold border border-earth-brown/10" 
-              : "bg-solar-gold/15 text-solar-gold border border-solar-gold/30"
-          )}>
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-solar-gold/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <span className="relative z-10 font-sans tracking-tight">BMC</span>
+          <div className="h-8 flex items-center justify-center transition-all duration-300 group-hover:scale-105 shrink-0">
+            <img
+              src="/Logo/PNG/Full Color Logo.png"
+              alt="BMC Logo"
+              className="h-full w-auto object-contain"
+            />
           </div>
           
-          <div className="flex flex-col text-left leading-none">
+          <div className="hidden sm:flex flex-col text-left leading-none">
             <span className={cn(
               "font-sans font-black tracking-tight text-xs sm:text-sm transition-colors duration-300 whitespace-nowrap",
               isScrolled 
@@ -60,13 +58,6 @@ export default function Navbar() {
                 : "text-white group-hover:text-solar-gold"
             )}>
               Bình Minh Power
-            </span>
-            <span className={cn(
-              "font-sans text-[8.5px] mt-0.5 flex items-center gap-0.5 leading-none font-semibold shrink-0 transition-colors duration-300 whitespace-nowrap",
-              isScrolled ? "text-earth-brown" : "text-stone-300"
-            )}>
-              <Award className="w-2.5 h-2.5 text-solar-gold shrink-0" />
-              Đại lý I-REC cấp 1
             </span>
           </div>
         </div>
@@ -88,7 +79,7 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               className={cn(
-                "text-[11px] font-black transition-all duration-200 px-3 py-1.5 rounded-full",
+                "text-[11px] font-black transition-all duration-200 px-3 py-1.5 rounded-full whitespace-nowrap",
                 isScrolled 
                   ? "text-stone-500 hover:text-navy-accent hover:bg-white hover:shadow-[0_2px_8px_rgba(0,0,0,0.02)]" 
                   : "text-stone-300 hover:text-white hover:bg-white/[0.08]"
@@ -103,7 +94,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2.5 sm:gap-3">
           {/* Slender Hotline Link Capsule */}
           <motion.a
-            href="tel:0901234788"
+            href="tel:0913943788"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
             className={cn(
@@ -136,9 +127,9 @@ export default function Navbar() {
                 isScrolled ? "text-stone-500" : "text-stone-400"
               )}>Hotline</span>
               <span className={cn(
-                "font-black text-xs mt-0.5 transition-colors duration-300",
+                "font-black text-xs mt-0.5 transition-colors duration-300 whitespace-nowrap",
                 isScrolled ? "text-navy-accent" : "text-white"
-              )}>0901 234 788</span>
+              )}>0913 943 788</span>
             </div>
           </motion.a>
           
@@ -166,10 +157,7 @@ export default function Navbar() {
               transition={{ duration: 0.85, ease: "easeInOut" }}
               className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 pointer-events-none"
             />
-            <span className="relative z-10">
-              <span className="hidden sm:inline">Audit Miễn Phí</span>
-              <span className="sm:hidden">Audit</span>
-            </span>
+            <span className="relative z-10 whitespace-nowrap">Audit Miễn Phí</span>
           </motion.button>
         </div>
 

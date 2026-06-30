@@ -194,7 +194,7 @@ export default function AuditModal() {
                   Đăng ký thành công!
                 </h3>
                 <p className="text-stone-600 text-sm leading-relaxed max-w-md mx-auto">
-                  Kỹ sư trưởng mảng CBAM / I-REC của Bình Minh Power đã tiếp nhận thông tin và sẽ liên hệ trực tiếp để tư vấn & đánh giá sơ bộ cho nhà máy của bạn trong vòng 2 giờ.
+                  Kỹ sư trưởng mảng CBAM / I-REC của Bình Minh Power đã tiếp nhận thông tin và sẽ liên hệ trực tiếp để tư vấn & đánh giá sơ bộ cho nhà máy của anh/chị trong vòng 2 giờ.
                 </p>
                 <button
                   type="button"
@@ -212,7 +212,7 @@ export default function AuditModal() {
                     Audit miễn phí
                   </span>
                   <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-navy-accent leading-tight">
-                    Nhận đánh giá I-REC cho nhà máy bạn
+                    Nhận đánh giá I-REC cho nhà máy anh/chị
                   </h3>
                   <p className="text-stone-600 text-xs sm:text-sm mt-1 leading-relaxed">
                     Hoàn toàn miễn phí. Không ràng buộc. Phản hồi trong 2 giờ.

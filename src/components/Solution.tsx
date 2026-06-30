@@ -23,14 +23,14 @@ export default function Solution() {
       num: "02",
       title: "Hồ sơ đăng ký",
       timeline: "Ngày 3–7",
-      description: "BMC chuẩn bị toàn bộ hồ sơ pháp lý — bạn chỉ cần cung cấp thông tin doanh nghiệp cơ bản.",
+      description: "BMC chuẩn bị toàn bộ hồ sơ pháp lý — anh/chị chỉ cần cung cấp thông tin doanh nghiệp cơ bản.",
       icon: FileText,
     },
     {
       num: "03",
       title: "Nộp registry quốc tế",
       timeline: "Ngày 7–14",
-      description: "Hồ sơ nộp lên I-REC Standard registry — tổ chức duy nhất được EU, UK, Singapore công nhận.",
+      description: "Hồ sơ nộp lên I-REC Standard registry — tổ chức được EU, UK và các thị trường quốc tế công nhận.",
       icon: Globe,
     },
     {
@@ -106,7 +106,7 @@ export default function Solution() {
             Từ 0 đến I-REC hợp lệ — chỉ 5 bước
           </h2>
           <p className="text-stone-300 text-sm sm:text-base leading-relaxed font-sans font-medium">
-            Bình Minh Power là đại lý cấp 1 của I-REC Standard Singapore — đảm bảo chứng chỉ hợp lệ toàn cầu.
+            Bình Minh Power đồng hành trọn gói từ audit đến phát hành chứng chỉ — đảm bảo hợp lệ toàn cầu.
           </p>
           <div className="w-16 h-1 bg-solar-gold mx-auto rounded-full mt-4"></div>
         </div>

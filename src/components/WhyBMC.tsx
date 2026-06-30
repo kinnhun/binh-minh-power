@@ -7,8 +7,8 @@ import { motion } from "motion/react";
 export default function WhyBMC() {
   const cards = [
     {
-      title: "Đại lý cấp 1 chính thức",
-      description: "BMC là đối tác trực tiếp được ủy quyền từ tổ chức registry quốc tế. Quy trình đăng ký rõ ràng, đảm bảo chứng chỉ phát hành hợp lệ và được công nhận toàn cầu.",
+      title: "Đơn vị cung cấp tín chỉ I-REC",
+      description: "BMC cung cấp tín chỉ I-REC hợp lệ từ các dự án năng lượng tái tạo đang vận hành. Quy trình đăng ký rõ ràng, đảm bảo chứng chỉ phát hành đúng chuẩn và được công nhận toàn cầu.",
       icon: ShieldCheck,
     },
     {

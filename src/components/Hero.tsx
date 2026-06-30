@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ArrowRight, CheckCircle2, Euro, Percent, Clock } from "lucide-react";
+import { ArrowRight, CheckCircle2, Euro, Percent, ShieldAlert } from "lucide-react";
 import { motion } from "motion/react";
 
 export default function Hero() {
@@ -23,7 +23,7 @@ export default function Hero() {
 
   const highlights = [
     "Kết quả trong 2–4 tuần",
-    "Đại lý cấp 1 Singapore",
+    "Dịch vụ trọn gói A–Z",
     "50+ nhà máy đã có I-REC"
   ];
 
@@ -147,7 +147,7 @@ export default function Hero() {
                   transition={{ duration: 0.8, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
                   className="text-solar-gold text-lg sm:text-2xl mt-4 font-bold tracking-wide border-l-2 border-solar-gold pl-3"
                 >
-                  Kiểm tra ngay xem bạn đang thiếu gì
+                  Kiểm tra ngay xem anh/chị đang thiếu gì
                 </motion.span>
               </h1>
             </div>
@@ -158,7 +158,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
               className="text-stone-300 text-sm sm:text-base leading-relaxed max-w-2xl font-medium"
             >
-              60% doanh nghiệp xuất khẩu EU hiện đang yêu cầu green credentials. Từ 2026, thuế CBAM có thể ăn thêm <strong className="text-solar-gold font-bold underline decoration-solar-gold/40">80–100 EUR/tấn CO₂</strong>. Audit miễn phí trong 48h — biết chính xác hồ sơ bạn cần bổ sung.
+              60% doanh nghiệp xuất khẩu EU hiện đang yêu cầu chứng chỉ xanh. Từ 2026, thuế CBAM có thể ăn thêm <strong className="text-solar-gold font-bold underline decoration-solar-gold/40">80–100 EUR/tấn CO₂</strong>. Audit miễn phí trong 48h — biết chính xác hồ sơ anh/chị cần bổ sung.
             </motion.p>
 
             {/* CTA Triggering the Popup Modal */}
@@ -341,14 +341,14 @@ export default function Hero() {
                   className="bg-white/[0.04] backdrop-blur-xl rounded-3xl p-5 border border-white/10 transition-all duration-300 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] flex gap-4 items-start cursor-default"
                 >
                   <div className="w-12 h-12 rounded-2xl bg-solar-gold/15 border border-solar-gold/25 flex items-center justify-center text-solar-gold shrink-0 transition-transform duration-300 hover:scale-110">
-                    <Clock className="w-6 h-6" />
+                    <ShieldAlert className="w-6 h-6" />
                   </div>
                   <div>
                     <h4 className="text-solar-gold text-lg sm:text-xl font-black leading-none mb-1.5 drop-shadow-[0_2px_8px_rgba(248,185,20,0.15)]">
-                      2–4 tuần
+                      Từ 2026
                     </h4>
                     <p className="text-stone-300 text-xs sm:text-sm leading-relaxed font-medium">
-                      Thời gian BMC hoàn thiện I-REC cho nhà máy
+                      CBAM chính thức áp dụng — nhà máy thiếu hồ sơ sẽ mất quyền xuất khẩu EU
                     </p>
                   </div>
                 </motion.div>

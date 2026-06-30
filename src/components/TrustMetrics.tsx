@@ -37,9 +37,9 @@ export default function TrustMetrics() {
       icon: Layers,
     },
     {
-      value: "Cấp 1 Singapore",
-      label: "Đại lý phân phối trực tiếp",
-      description: "Đầu mối xử lý I-REC trực tiếp, tối ưu hóa chi phí và đảm bảo tính hợp pháp quốc tế.",
+      value: "Chứng nhận quốc tế",
+      label: "Hợp lệ toàn cầu",
+      description: "Chứng chỉ I-REC được EU, UK và các tổ chức quốc tế công nhận, đảm bảo tính hợp pháp cho hồ sơ xuất khẩu.",
       icon: Shield,
     },
   ];

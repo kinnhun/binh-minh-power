@@ -9,7 +9,7 @@ export default function TrustTicker() {
     { value: "8 năm", label: "Kinh nghiệm" },
     { value: "100%", label: "Hợp lệ EU" },
     { value: "2–4T", label: "Hoàn thiện" },
-    { value: "Cấp 1", label: "Singapore" },
+    { value: "48h", label: "Phản hồi" },
     { value: "A–Z", label: "Trọn gói" },
   ];
 

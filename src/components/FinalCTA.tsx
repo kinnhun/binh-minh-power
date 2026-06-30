@@ -36,10 +36,10 @@ export default function FinalCTA() {
             Hành động ngay hôm nay
           </span>
           <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight max-w-4xl mx-auto">
-            Đừng để CBAM cắt đứt chuỗi đơn hàng EU của bạn
+            Đừng để CBAM cắt đứt chuỗi đơn hàng EU của anh/chị
           </h2>
           <p className="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-            Nhà máy xuất khẩu EU cần chuẩn bị I-REC, dữ liệu điện sạch và hồ sơ carbon trước khi buyer yêu cầu bổ sung. BMC giúp bạn kiểm soát rủi ro pháp lý và chi phí carbon ngay từ hôm nay.
+            Nhà máy xuất khẩu EU cần chuẩn bị I-REC, dữ liệu điện sạch và hồ sơ carbon trước khi buyer yêu cầu bổ sung. BMC giúp anh/chị kiểm soát rủi ro pháp lý và chi phí carbon ngay từ hôm nay.
           </p>
         </motion.div>
 
@@ -82,11 +82,11 @@ export default function FinalCTA() {
           </button>
           
           <a
-            href="tel:0901234788"
+            href="tel:0913943788"
             className="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-sm sm:text-base flex items-center justify-center gap-2 transition-all focus:outline-none"
           >
             <Phone className="w-4 h-4 text-solar-gold" />
-            Gọi ngay 0901 234 788
+            Gọi ngay 0913 943 788
           </a>
         </motion.div>
 

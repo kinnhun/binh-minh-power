@@ -31,7 +31,7 @@ export default function BottomRightCorner() {
             Tư vấn trong 2h
           </span>
           <span className="text-sm font-bold mt-1 text-white leading-none">
-            0901 234 788
+            0913 943 788
           </span>
           <span className="text-[10px] text-white/70 mt-1 leading-none">
             Nhấp để gửi yêu cầu audit

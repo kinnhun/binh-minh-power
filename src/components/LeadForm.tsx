@@ -206,7 +206,7 @@ export default function LeadForm() {
                     Gửi yêu cầu thành công!
                   </h3>
                   <p className="text-stone-600 text-xs sm:text-sm leading-relaxed max-w-md">
-                    Kỹ sư trưởng mảng CBAM / I-REC của Bình Minh Power đã tiếp nhận thông tin và sẽ liên hệ trực tiếp để tư vấn & đánh giá sơ bộ cho nhà máy của bạn trong vòng 2 giờ.
+                    Kỹ sư trưởng mảng CBAM / I-REC của Bình Minh Power đã tiếp nhận thông tin và sẽ liên hệ trực tiếp để tư vấn & đánh giá sơ bộ cho nhà máy của anh/chị trong vòng 2 giờ.
                   </p>
                   <button
                     type="button"
@@ -223,7 +223,7 @@ export default function LeadForm() {
                       Audit miễn phí
                     </span>
                     <h3 className="font-extrabold text-navy-accent text-lg sm:text-xl">
-                      Nhận đánh giá I-REC cho nhà máy bạn
+                      Nhận đánh giá I-REC cho nhà máy anh/chị
                     </h3>
                     <p className="text-stone-500 text-xs mt-1">
                       Hoàn toàn miễn phí. Không ràng buộc. Phản hồi trong 2 giờ.
